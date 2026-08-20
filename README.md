@@ -62,17 +62,16 @@ npm run build:installer
 
 技术栈：Electron + React + TypeScript + Vite + WebSocket
 
-### 兼容性与扩展
+### 兼容性说明
 
-本项目目前仅支持 **Trae IDE**（Windows）。核心原理是通过修改 IDE 的入口 HTML 文件注入视频背景，这一思路适用于大多数基于 Electron 的桌面应用。
+本软件的核心原理是通过修改 Electron 应用的入口 HTML 文件注入视频背景。**所有基于 Electron 框架开发的桌面应用都可以支持**，包括但不限于：
 
-**欢迎其他开发者贡献：**
+- **开发工具**：VS Code, Cursor, Windsurf, Codex, WebStorm, Figma
+- **沟通协作**：飞书, 钉钉, Discord, Slack, Notion, Teams
+- **娱乐休闲**：Spotify, 抖音, Bilibili, Obsidian, Telegram
+- **实用工具**：Docker Desktop, Postman, GitKraken
 
-- 适配 VS Code、Cursor、Windsurf 等 Electron 编辑器
-- 支持 macOS / Linux
-- 优化视频解码性能
-- 增加更多自定义选项（滤镜、模糊、遮罩等）
-- 提供图片背景支持
+**注意：目前仅 Trae 已完成适配，其他软件需要单独适配入口文件路径。** 欢迎社区贡献适配方案。
 
 只需修改 `src/electron/main.ts` 中的 `DEFAULT_TRAE_PATH` 和目标 HTML 文件路径即可适配其他应用。
 
@@ -128,17 +127,16 @@ npm run build:installer
 
 Tech stack: Electron + React + TypeScript + Vite + WebSocket
 
-### Compatibility & Extensions
+### Compatibility
 
-This project currently supports **Trae IDE** (Windows) only. The core principle — modifying an IDE's entry HTML file to inject a video background — applies to most Electron-based desktop applications.
+The core principle is injecting video backgrounds by modifying the entry HTML file of Electron apps. **All Electron-based desktop applications are theoretically supported**, including but not limited to:
 
-**Contributions welcome:**
+- **Dev Tools**: VS Code, Cursor, Windsurf, Codex, WebStorm, Figma
+- **Communication**: Feishu, DingTalk, Discord, Slack, Notion, Teams
+- **Entertainment**: Spotify, Douyin, Bilibili, Obsidian, Telegram
+- **Utilities**: Docker Desktop, Postman, GitKraken
 
-- Adapt for VS Code, Cursor, Windsurf, and other Electron editors
-- Support macOS / Linux
-- Optimize video decoding performance
-- Add more customization options (filters, blur, masks, etc.)
-- Add image background support
+**Note: Currently only Trae has been adapted. Other software requires individual adaptation of entry file paths.** Community contributions for adaptations are welcome.
 
 To adapt for other apps, simply modify `DEFAULT_TRAE_PATH` and the target HTML file path in `src/electron/main.ts`.
 
