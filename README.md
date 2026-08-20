@@ -6,6 +6,10 @@
 
 A desktop wallpaper player designed for **Trae IDE**, bringing dynamic video backgrounds to your code editor.
 
+### 下载 | Download
+
+- **Windows x64**: [Trae-Wallpaper-Player-v1.0.0-windows-x64.zip](https://github.com/HZXIOI/trae-wallpaper-player/releases/download/v1.0.0/Trae-Wallpaper-Player-v1.0.0-windows-x64.zip) (106 MB)
+
 ---
 
 ## 中文
