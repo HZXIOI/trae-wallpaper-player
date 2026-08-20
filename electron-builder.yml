@@ -1,0 +1,32 @@
+appId: com.trae.wallpaper.player
+productName: Trae Wallpaper Player
+copyright: Copyright © 2026
+directories:
+  output: dist-release4
+  buildResources: build
+files:
+  - dist
+  - dist-electron
+extraResources:
+  - from: assets
+    to: assets
+    filter:
+      - "**/*"
+win:
+  target:
+    - target: dir
+      arch:
+        - x64
+  icon: build/icon.ico
+  verifyUpdateCodeSignature: false
+  signAndEditExecutable: false
+  requestedExecutionLevel: requireAdministrator
+forceCodeSigning: false
+mac:
+  target:
+    - dmg
+  icon: build/icon.icns
+linux:
+  target:
+    - AppImage
+  icon: build/icon.png
